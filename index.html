@@ -1,61 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <!--Custom Css-->
-    <link href ="css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap" rel="stylesheet">
-    
+
     <title>IEEE-PES VIT</title>
 </head>
+
 <body>
+    <!-- Hero -->
     <div class="main-top">
-    <!-- Header -->
-    <header class="primary-header flex">
-        <div >
-            <img src="images/peslogo.png" alt="peslogo" class="logo">
+        <!-- Header -->
+        <header class="primary-header flex">
+            <div>
+                <img src="images/peslogo.png" alt="peslogo" class="logo">
+            </div>
+            <!-- button-nav -->
+            <button type="button" class="nav-toggler" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+            </button>
+            <!-- Navigation -->
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li><a class=" active ff-serif fs-300 letter-spacing-2" href="#">Home</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#about">About</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#events">Events</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#blogs">Blogs</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Team</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+        <!-- Hero Banner -->
+        <div class="grid-container">
+            <div class="grid-text">
+                <h1 class="ff-normal fs-550 uppercase ">ieee </h1>
+                <h1 class="ff-normal fs-500 uppercase ">power and energy society<br>vit</h1>
+                <p class="ff-normal fs-700 uppercase">More power to future</p>
+            </div>
         </div>
-        <!-- button-nav -->
-        <button type="button" class="nav-toggler" 
-        aria-controls="primary-navigation" aria-expanded="false">
-        <span></span>
-        </button>
-        <!-- Navigation -->
-        <nav>
-            <ul id="primary-navigation" data-visible="false" class ="primary-navigation flex">
-                <li><a class=" active ff-serif fs-300 letter-spacing-2" href="#">Home</a></li>
-                <li><a class="ff-serif fs-300 letter-spacing-2" href="#">About</a></li>
-                <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Events</a></li>
-                <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Blogs</a></li>
-                <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Team</a></li>
-                <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Contacts</a></li>
-            </ul>
-        </nav>
-    </header> 
-    <!-- /Header -->
-    <!-- Hero Banner -->
-    <div class="grid-container">
-        <div class="grid-text">
-            <h1 class="ff-normal fs-550 uppercase ">ieee </h1>
-            <h1 class="ff-normal fs-500 uppercase ">power and energy society<br>vit</h1>
-            <p class="ff-normal fs-700 uppercase">More power to future</p>
-        </div>
+        <!-- /Hero Banner -->
     </div>
-    <!-- /Hero Banner -->
+    <!-- /Hero -->
 
     <!-- About -->
-    <section>
-
+    <section id="about">
+        <div class=" about-main ">
+            <div class="about-div">
+                <h1 class="ff-serif fs-550 letter-spacing-3">About Us</h1>
+                <p class="ff-normal fs-300 ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing.
+                </p>
+            </div>
+            <div class="about-img-div">
+                <div class="about-img"></div>
+            </div>
+        </div>
     </section>
+    <!-- /About -->
+
+    <!-- Events -->
+    <section id="events">
+        <div class="main-intro-div" style="padding-top: 2rem;">
+            <h1 class="ff-serif fs-550">Our Events</h1>
+            <p class="ff-normal fs-300 ">
+                IEEE PES VIT conducts various technical events and non-technical events throughout the year. Take a look
+                at some of our events
+            </p>
+        </div>
+        <div class="swiper mySwiper" style="padding: 2.5rem 4.5rem;">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide slide-div">
+                    <div class="event-img-div">
+                        <div class="event-img"></div>
+                    </div>
+                    <div class="event-desc">
+                        <h1 class="ff-serif fs-350 capitalize"> event name </h1>
+                        <p class="ff-normal fs-300">
+                            It has survived not only five centuries, but also the
+                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                            1960s
+                            with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                        </p>
+                    </div>
+                </div>
+                <div class=" swiper-slide slide-div">
+                    <div class="event-img-div">
+                        <div class="event-img"></div>
+                    </div>
+                    <div class="event-desc">
+                        <h1 class="ff-serif fs-350 capitalize"> event name </h1>
+                        <p class="ff-normal fs-300">
+                            It has survived not only five centuries, but also the
+                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                            1960s
+                            with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                        </p>
+                    </div>
+                </div>
+                <div class=" swiper-slide slide-div">
+                    <div class="event-img-div">
+                        <div class="event-img"></div>
+                    </div>
+                    <div class="event-desc">
+                        <h1 class="ff-serif fs-350 capitalize"> event name </h1>
+                        <p class="ff-normal fs-300">
+                            It has survived not only five centuries, but also the
+                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                            1960s
+                            with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                        </p>
+                    </div>
+                </div>
+                <div class=" swiper-slide slide-div">
+                    <div class="event-img-div">
+                        <div class="event-img"></div>
+                    </div>
+                    <div class="event-desc">
+                        <h1 class="ff-serif fs-350 capitalize"> event name </h1>
+                        <p class="ff-normal fs-300">
+                            It has survived not only five centuries, but also the
+                            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                            1960s
+                            with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- /Events -->
+
+    <!-- Blog -->
+
+    <!-- /Blog -->
+
 
     <!-- Javascript -->
     <script src="js/nav.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
+
 </html>
