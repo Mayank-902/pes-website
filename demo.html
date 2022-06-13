@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,9 +8,11 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- Jquery -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  
     <!-- Custom Css -->
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
 
@@ -25,83 +24,170 @@
   </head>
 
   <body>
-    <!-- Swiper -->
-    <section id="events">
-            <div class="main-intro-div">
-                <h1 class="ff-serif fs-550">Our Events</h1>
-                <p class="ff-normal fs-300 ">
-                    IEEE PES VIT conducts various technical events and non-technical events throughout the year. Take a look
-                    at some of our events
-                </p>
+    <div class="main-top">
+        <!-- Header -->
+        <header class="primary-header flex">
+            <div>
+                <img src="images/peslogo.png" alt="peslogo" class="logo">
             </div>
-            <div class="swiper mySwiper" style="padding: 4.5rem;">
-                <div class="swiper-wrapper">
-                    <div class=" swiper-slide slide-div">
-                        <div class="event-img-div">
-                            <div class="event-img"></div>
-                        </div>
-                        <div class="event-desc">
-                            <h1 class="ff-serif fs-350 capitalize"> event name </h1>
-                            <p class="ff-normal fs-300">
-                                It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                1960s
-                                with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
-                            </p>
-                        </div>
-                    </div>
-                    <div class=" swiper-slide slide-div">
-                        <div class="event-img-div">
-                            <div class="event-img"></div>
-                        </div>
-                        <div class="event-desc">
-                            <h1 class="ff-serif fs-350 capitalize"> event name </h1>
-                            <p class="ff-normal fs-300">
-                                It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                1960s
-                                with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
-                            </p>
-                        </div>
-                    </div>
-                    <div class=" swiper-slide slide-div">
-                        <div class="event-img-div">
-                            <div class="event-img"></div>
-                        </div>
-                        <div class="event-desc">
-                            <h1 class="ff-serif fs-350 capitalize"> event name </h1>
-                            <p class="ff-normal fs-300">
-                                It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                1960s
-                                with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
-                            </p>
-                        </div>
-                    </div>
-                    <div class=" swiper-slide slide-div">
-                        <div class="event-img-div">
-                            <div class="event-img"></div>
-                        </div>
-                        <div class="event-desc">
-                            <h1 class="ff-serif fs-350 capitalize"> event name </h1>
-                            <p class="ff-normal fs-300">
-                                It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                1960s
-                                with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>       
-    </section>
+            <!-- button-nav -->
+            <button type="button" class="nav-toggler" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+            </button>
+            <!-- Navigation -->
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li><a class=" active ff-serif fs-300 letter-spacing-2" href="#">Home</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#about">About</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#events">Events</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#blogs">Blogs</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Team</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+        <!-- Hero Banner -->
+        <div class="grid-container">
+            <div class="grid-text">
+                <h1 class="ff-normal fs-550 uppercase ">ieee </h1>
+                <h1 class="ff-normal fs-500 uppercase ">power and energy society<br>vit</h1>
+                <p class="ff-normal fs-700 uppercase">More power to future</p>
+            </div>
+        </div>
+        <!-- /Hero Banner -->
+    </div>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- <section id="events">
+        <div class="main-intro-div">
+            <h1 class="ff-serif fs-550">Our Events</h1>
+            <p class="ff-normal fs-300 ">
+                IEEE PES VIT conducts various technical events and non-technical events throughout the year. Take a look
+                at some of our events
+            </p>
+        </div>
+		<div class="testimonial-box">
+			<div class="container main-container">
+				<div class="row" >
+					<div class="col-lg-12" >
+						<div class="team-slider owl-carousel">
+                            <div class="slide-div " >
+                                <div class="event-img-div">
+                                    <div class="event-img"></div>
+                                </div>
+                                <div class="event-desc">
+                                    <h1 class="ff-serif fs-350 capitalize"> event name </h1>
+                                    <p class="ff-normal fs-300">
+                                        It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                        1960s
+                                        with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slide-div " >
+                                <div class="event-img-div">
+                                    <div class="event-img"></div>
+                                </div>
+                                <div class="event-desc">
+                                    <h1 class="ff-serif fs-350 capitalize"> event name2 </h1>
+                                    <p class="ff-normal fs-300">
+                                        It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                        1960s
+                                        with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slide-div " >
+                                <div class="event-img-div">
+                                    <div class="event-img"></div>
+                                </div>
+                                <div class="event-desc">
+                                    <h1 class="ff-serif fs-350 capitalize"> event name3 </h1>
+                                    <p class="ff-normal fs-300">
+                                        It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                        1960s
+                                        with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slide-div " >
+                                <div class="event-img-div">
+                                    <div class="event-img"></div>
+                                </div>
+                                <div class="event-desc">
+                                    <h1 class="ff-serif fs-350 capitalize"> event name4 </h1>
+                                    <p class="ff-normal fs-300">
+                                        It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                        1960s
+                                        with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slide-div " >
+                                <div class="event-img-div">
+                                    <div class="event-img"></div>
+                                </div>
+                                <div class="event-desc">
+                                    <h1 class="ff-serif fs-350 capitalize"> event name5 </h1>
+                                    <p class="ff-normal fs-300">
+                                        It has survived not only five centuries, but also the
+                                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                        1960s
+                                        with the release of Letraset sheets containing. yasuy hgasfzdn hgazdy nhas
+                                    </p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+    <section id="blogs">
+        <div class="main-intro-div">
+            <h1 class="ff-serif fs-550">Our Board</h1>
+        </div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-controls">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/slide-1.jpg')"></li>
+                <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/ieeepesboard.jpg')"></li>
+                <li data-target="#carousel" data-slide-to="2" style="background-image:url('img/slide-3.jpg')"></li>
+                
+              </ol>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+               <img src="img/left-arrow.svg" alt="Prev"> 
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <img src="img/right-arrow.svg" alt="Next">
+            </a>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image:url('img/slide-1.jpg')">
+              </div>
+              <div class="carousel-item" style="background-image:url('img/ieeepesboard.jpg')">
+              </div>
+              <div class="carousel-item" style="background-image:url('img/slide-3.jpg')">
+              </div>
+            </div>
+          </div>
+	</section>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+	</script> 
     <script src="js/scroll.js"></script>
-    <!-- -->
 
-  </body>
+</body>
 </html>
+

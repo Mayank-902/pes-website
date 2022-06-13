@@ -1,14 +1,28 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView:4,
-    spaceBetween: 30,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+$('.team-slider').owlCarousel({
+    loop: true,            
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 450,
+    margin: 20,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2
+        },
+        991: {
+            items: 3
+        },
+        1200: {
+            items: 3
+        },
+        1440: {
+         items: 3
+        },
+        1920: {
+            items: 4
+        }
+    }
 });

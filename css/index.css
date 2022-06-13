@@ -254,7 +254,7 @@ p {
 .main-intro-div{
     text-align: center;
     width: 100%;
-    padding:0 9rem;
+    padding-top:1rem ;
 }
 .main-intro-div h1{
     font-weight: 500;
@@ -267,11 +267,10 @@ p {
     padding: 0 12rem;
 }
 .slide-div{
-    width: 300px;
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    transition: all 0.36s ease-in-out;
+    border: 1px solid #ddd;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: rgb(254, 249, 249);
 }
 .event-img-div{
     width: 100%;
@@ -286,7 +285,7 @@ p {
     height: 240px;
 }
 .event-desc{
-    height: 280px;
+    height: 260px;
     text-align: center;
 }
 .event-desc h1{
@@ -299,13 +298,80 @@ p {
     padding: 0 0.9rem;
 }
 
+.main-container{
+    padding: 2rem 4.5rem;
+}
+.owl-carousel .owl-nav.disabled{
+    position: absolute;
+    display: flex;
+    top:  38%;
+    width: 100%;
+    padding: 0 6rem;
+    justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: relative;
+    left: -9rem;
+    font-size: 60px;
+	text-align: center;
+    opacity: 80%;
+}
+.owl-carousel .owl-nav button.owl-next{
+    position: relative;
+    font-size: 60px;
+    right: -9rem;
+    text-align: center;
+    opacity: 80%;
+}
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover{
+    font-size: 62px;
+    opacity: 100%;
+    transition: all 0.36s ease;
+}
+
+.team-slider .owl-dots {
+	left: 0;
+	right: 0;
+	bottom: -60px;
+	text-align: center;
+	width: 100%;
+}
+.team-slider button.owl-dot {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin: 0 3px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+.team-slider .owl-dot.active {
+	background-color: rgba(28, 255, 39,1);
+}
+.move-animation {
+	position: relative;
+	-webkit-animation: move-animation 2s ease-in-out infinite;
+	animation: move-animation 2s ease-in-out infinite;
+}
+@-webkit-keyframes move-animation {
+	0% {
+		top: 3px;
+	}
+	50% {
+		top: -3px;
+	}
+	100% {
+		top: 3px;
+	}
+}
 
 /* Blogs */
 #blogs{
     width: 100%;
     min-height: 600px;
+    background-color: #fff;
 }
-
 
 /* phone-navigation */
 @media (max-width: 40em) {
@@ -429,6 +495,10 @@ p {
         font-size: 48px;
         font-weight: 700;
     }
+
+    .main-intro-div p{
+        padding: 0 6rem;
+    }
 }
 @media screen and (max-width:800px) {
     .about-main{
@@ -451,6 +521,9 @@ p {
     .grid-text p{
         font-size: 42px;
         font-weight: 700;
+    }
+    .main-intro-div p{
+        padding: 0 3rem;
     }
 }
 @media screen  and (max-width:678px) {
@@ -482,6 +555,12 @@ p {
     .grid-text p{
         font-size: 36px;
         font-weight: 700;
+    }
+    .main-intro-div p{
+        padding: 0 1.5rem;
+    }
+    .team-slider .owl-dots{
+        padding-top: 1rem;
     }
 }
 @media screen and (max-width:640px) {
@@ -534,8 +613,11 @@ p {
         padding: 1.75rem 1.5rem;
     }
     .about-div h1{
-        font-size: 30px;
+        font-size: 36px;
         padding-bottom: 1.5rem;
+    }
+    .about-div p{
+        font-size: 20px;
     }
     .about-img{
         height: 300px;
@@ -561,8 +643,18 @@ p {
        font-size: 30px;
        font-weight: 700;
        letter-spacing: 3.6px;
+    }  
+    .main-intro-div h1{
+        padding: 0 6rem;
+        font-size: 36px;
     }
-    
+    .main-intro-div p{
+        padding: 0 0.5rem;
+        font-size: 20px;
+    }
+    .main-container{
+        padding: 3rem;
+    }
 }
 @media  screen and (max-width:480px) {
     .main-top{
@@ -570,12 +662,6 @@ p {
     }
     .about-img{
         height: 260px;
-    }
-    .about-div h1{
-        font-size: 27px;
-    }
-    .about-div p{
-        font-size: 16px;
     }
     .primary-header div{
         padding-left: 6px;
@@ -653,6 +739,10 @@ p {
         font-size: 21px;
         font-weight: 600;
         letter-spacing: 2.25px;
+    }
+
+    .main-intro-div h1{
+        padding: 0rem;
     }
 }
 
