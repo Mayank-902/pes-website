@@ -43,6 +43,7 @@ h3,
 h4,
 h5,
 p,
+ul,
 figure,
 picture {
     margin: 0; 
@@ -76,16 +77,24 @@ p {
     padding-left: 4.5rem;
 }
 .logo{
+    background: url(../images/peslogo.png) no-repeat center / cover;
     position: relative;
-    width: 72px;
-    height: 72px;
+    width: 75px;
+    height: 75px;
 }
-
 .primary-header{
+    position: fixed;
     width: 100%;
     align-items: center;
+    z-index: 9999;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(12, 47, 233, 0.39) 43.02%, rgba(43, 66, 185, 0.21) 100%);
+}
+.primary-header.scrolled{
+    background-color: rgba(78,148,79, 1);
+    box-shadow: -3px 4px 10px rgba(0, 0, 0, 0.69);
+}
+.primary-header.scrolled .logo{
+    background: url(../images/peslogo-white.png) no-repeat center / cover;
 }
 
 .primary-navigation{
@@ -153,12 +162,12 @@ p {
 }
 
 .grid-container {
-    width: 90% ;
+    width: 100% ;
     height:fit-content;
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    padding-top: 9rem;
+    padding-top: 18rem;
     align-items:flex-start;
     justify-content: left;
 }
@@ -378,6 +387,9 @@ p {
     .nav-toggler{
         display: block;
     }
+    .nav-toggler[aria-expanded="true"]{
+        position: fixed;
+    }
     .nav-toggler[aria-expanded="true"] span{
         background-color: transparent;
     }
@@ -433,6 +445,9 @@ p {
 }
 
 @media  screen and (max-width:1200px) {
+    .grid-container{
+        padding-left: 2rem;
+    }
     .about-div{
         max-width: 540px;
     }
@@ -531,7 +546,7 @@ p {
         min-height: 540px;
     }
     .grid-container{
-        padding-top: 6.3rem;
+        padding-top: 12rem;
     }
     .primary-header div{
         padding-left: 6px;

@@ -26,3 +26,7 @@ $('.team-slider').owlCarousel({
         }
     }
 });
+
+$(window).scroll(function(){
+    $('.primary-header').toggleClass('scrolled',$(this).scrollTop()>80);
+});
