@@ -1,4 +1,4 @@
-$('.team-slider').owlCarousel({
+$('.slider').owlCarousel({
     loop: true,            
     nav: false,
     autoplay: true,

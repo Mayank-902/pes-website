@@ -15,6 +15,7 @@
   
     <!-- Custom Css -->
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/demo.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- google-fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +42,7 @@
                     <li><a class="ff-serif fs-300 letter-spacing-2" href="#about">About</a></li>
                     <li><a class="ff-serif fs-300 letter-spacing-2" href="#events">Events</a></li>
                     <li><a class="ff-serif fs-300 letter-spacing-2" href="#blogs">Blogs</a></li>
-                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Team</a></li>
+                    <li><a class="ff-serif fs-300 letter-spacing-2" href="#team">Team</a></li>
                     <li><a class="ff-serif fs-300 letter-spacing-2" href="#">Contacts</a></li>
                 </ul>
             </nav>
@@ -58,7 +59,7 @@
         <!-- /Hero Banner -->
     </div>
 
-     <section id="events"> 
+     <section id="blogs"> 
         <div class="main-intro-div">
             <h1 class="ff-serif fs-550">Our Events</h1>
             <p class="ff-normal fs-300 ">
@@ -148,6 +149,88 @@
 		</div>
 	</section> 
 
+    <section id="team">
+        <div class="main-intro-div">
+            <p class="ff-normal fs-400 capitalize">meet our team</p>
+            <h1 class="ff-serif fs-550">Executive Board 2022-23</h1>
+        </div>
+        <div class="team-container">
+        <main class="grid-layout">
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/abt-prevboard.jpeg" class="team-img">
+                <div class="text">
+                    <h1 class="ff-serif fs-350">nila</h1>
+                    <p class="ff-normal fs-300">Chairperson</p>
+                </div>
+            </article>
+        
+        </main>
+        </div>
+    </section>
+
     
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
@@ -156,20 +239,7 @@
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
 	</script> 
-    <script>
-        $('.team-slider').owlCarousel({
-            loop: true,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 450,
-            margin: 20,
-            items: 1
-        });
-        $(window).scroll(function () {
-            $('.primary-header').toggleClass('scrolled', $(this).scrollTop() > 80);
-        });
-    </script>
+    <script src="js/scroll.js"></script>
 
 </body>
 </html>
