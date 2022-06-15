@@ -33,7 +33,7 @@
 /* letter-form */
 .uppercase {text-transform: uppercase;}
 .capitalize{text-transform: capitalize;}
-
+.justify{ justify-content: center;}
 
 /* Scroll behavior */
 html{
@@ -454,6 +454,7 @@ p {
     width: 100%;
     padding: 3rem;
     display: flex;
+    gap:2rem;
     justify-content: center;
     align-content: center;
 }
@@ -617,6 +618,9 @@ p {
     .grid-layout{
         grid-template-columns: repeat(3,1fr);
     }
+    .main-end{
+        gap:0;
+    }
 }
 
 @media  screen and (max-width:1200px) {
@@ -755,7 +759,15 @@ p {
     }
 
     .main-end{
+        padding-top: 3.75rem;
         display: grid;
+        gap: 1.2rem;
+    }
+    .f-reach{
+        padding-top: 2rem;
+    }
+    .f-intro{
+        padding: 0rem;
     }
     .f-reach .grid h1{
         text-align: center;
@@ -926,9 +938,6 @@ p {
         padding: 0 0.5rem;
         font-size: 20px;
     }
-    .main-end{
-        padding: 2rem 0rem;
-    }
 }
 
 @media  screen and (max-width:480px) {
@@ -954,7 +963,10 @@ p {
         font-size: 27px;
         letter-spacing: 3.25px;
     }
-    
+    .main-end{
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
 }
 
 @media screen and (max-width:440px){
