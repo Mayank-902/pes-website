@@ -265,7 +265,6 @@ p {
     background: rgba(93, 253, 100, 0.5) ;
     min-height: 600px;
 }
-
 .main-intro-div{
     text-align: center;
     width: 100%;
@@ -428,6 +427,9 @@ p {
 .grid-layout >article:hover{
     transform: translateY(5px);
     box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.36);
+}
+.grid-layout >article i{
+    color: rgba(44, 110, 224, 0.81);
 }
 .team-img{
     height: 250px;

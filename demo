@@ -59,19 +59,19 @@
         <!-- /Hero Banner -->
     </div>
 
-     <section id="blogs"> 
+    <section id="blogs">
         <div class="main-intro-div">
-            <h1 class="ff-serif fs-550">Our Events</h1>
+            <h1 class="ff-serif fs-550">Our Blogs</h1>
             <p class="ff-normal fs-300 ">
-                IEEE PES VIT conducts various technical events and non-technical events throughout the year. Take a look
-                at some of our events
+                IEEE PES VIT publishes various informative technical and non-technical blogs throughout the year. Take a look
+                at some of our blogs
             </p>
         </div>
 		<div class="testimonial-box">
 			<div class="container main-container">
 				<div class="row" >
 					<div class="col-lg-12" >
-						<div class="team-slider owl-carousel">
+						<div class="slider owl-carousel">
                             <div class="slide-div " >
                                 <div class="event-img-div">
                                     <div class="event-img"></div>
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 		</div>
-	</section> 
+	</section>
 
     <section id="team">
         <div class="main-intro-div">
